@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Express Food</title>
+	<link rel="shortcut icon" type="text/css" href="img/title.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script> 
+</head>
+<body>
+	
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Express Food</a>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar" aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		</button>
+
+  	<div class="collapse navbar-collapse" id="nav-bar">
+    	<ul class="navbar-nav mr-auto">
+      		<li class="nav-item active">
+        		<a class="nav-link" href="C:\Users\Granit\Desktop\HEKATHON\index.html" id="home">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="C:\Users\Granit\Desktop\HEKATHON\index.html" id="home1" style="display: none">HYRJE<span class="sr-only">(current)</span></a>
+      		</li>
+      		<li class="nav-item">
+        		<a class="nav-link" href="C:\Users\Granit\Desktop\HEKATHON\menu\menu.html" id="menu">MENU</a>
+            <a class="nav-link" href="C:\Users\Granit\Desktop\HEKATHON\menu\menu.html" id="menu1" style="display: none;">MENUJA</a>
+      		</li>
+      		<li class="nav-item dropdown" id="contacts">
+        		<a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONTACTS</a>
+        		<div class="dropdown-menu" id="dropdown" aria-labelledby="dropdown01">
+          			<a class="dropdown-item" href="#">Facebook</a>
+          			<a class="dropdown-item" href="#">Instagram</a>
+         			<a class="dropdown-item" href="#" id="number">Viber/Whatsapp</a>
+        		</div>
+            <ul id="numbers">
+                  <li>+38344225884</li>
+                  <li>+38349225884</li>
+              </ul>
+
+      		</li>
+
+            <li class="nav-item dropdown" id="contacts1" style="display: none;">
+            <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONTACTS</a>
+            <div class="dropdown-menu" id="dropdown" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Instagram</a>
+              <a class="dropdown-item" href="#" id="number1">Viber/Whatsapp</a>
+            </div>
+            <ul id="numbers1">
+                  <li>+38344225884</li>
+                  <li>+38349225884</li>
+              </ul>
+
+          </li>
+   		</ul>
+  	</div>
+		<div class="text-white lang">
+				<a href="#" id="click">ENG</a>|
+				<a href="#" id="click1">ALB</a>
+		</div>
+	</nav>
+
+     <div class="album py-5">
+      <h4 class="display-1 text-white long">~~~ Pasta's ~~~</h4>
+      <h4 class="display-1 text-white short" >Pasta's</h4>
+
+    <div class="container" style="margin-top: 50px;">
+
+  <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card">
+            <img src="img/macaroni.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body" id="pasta">
+              <h4>Macaroni</h4>
+              <p class="card-text">Made with garlic, milk and different vegetables.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn1" id="btn1">Add To Cart</button>
+                </div>
+                <small>Price: 3€</small>
+              </div>
+            </div>
+
+            <div class="card-body" id="pasta1" style="display: none">
+              <h4>Makarona</h4>
+              <p class="card-text">E bere me hudher, qumesht dhe perime te ndryshme.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn1" id="btn1">Shto ne Shporte</button>
+                </div>
+                <small>Qmimi: 3€</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card">
+            <img src="img/spaghetti.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body" id="pasta2">
+              <h4>Spaghetti</h4>
+              <p class="card-text">With delicious tomatoe paste, fish sauce and a good flavour red wine.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn2" id="btn1">Add To Cart</button>
+                </div>
+                <small>Price: 3€</small>
+              </div> 
+            </div>
+
+            <div class="card-body" id="pasta3" style="display: none;">
+              <h4>Shpageta</h4>
+              <p class="card-text">Me paste te shijshme te domateve, leng te peshkut dhe vere te kuqe.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn2" id="btn1">Add To Cart</button>
+                </div>
+                <small>Qmimi: 3€</small>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card">
+            <img src="img/lasgna.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body" id="pasta4">
+              <h4>Lasagna</h4>
+              <p class="card-text">Made with Italian sausage, ground beef and a lot of ricotta cheese.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn3" id="btn1">Add To Cart</button>
+                </div>
+                <small>Price: 3.5€</small>
+              </div>
+            </div>
+
+            <div class="card-body" id="pasta5" style="display: none;">
+              <h4>Lazanja</h4>
+              <p class="card-text">E bere me suxhuka italian, mishe i terrur dhe shume djathe riccota.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn3" id="btn1">Shto ne Shporte</button>
+                </div>
+                <small>Qmimi: 3.5€</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card">
+            <img src="img/home.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body" id="pasta6">
+              <h4>Home-style Pasta</h4>
+              <p class="card-text">Made with green peas, carrots and tomatoe sauce.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn4" id="btn1">Add To Cart</button>
+                </div>
+                <small>Price: 2.5€</small>
+              </div>
+            </div>
+
+             <div class="card-body" id="pasta7" style="display: none;">
+              <h4>Pasta Shtepie</h4>
+              <p class="card-text">E bere me bizele te gjelberta, karrota dhe lenge domateje.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn4" id="btn1">Shto ne Shporte</button>
+                </div>
+                <small>Qmimi: 2.5€</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card">
+            <img src="img/bolognese.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body" id="pasta8">
+              <h4>Spaghetti Bolognese</h4>
+              <p class="card-text">Made with beef mince, red wine with good flavour and tomatoe sauce.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn5" id="btn1">Add To Cart</button>
+                </div>
+                <small>Price: 3.5€</small>
+              </div>
+            </div>
+
+              <div class="card-body" id="pasta9" style="display: none;">
+              <h4>Shpageta Bolonjeze</h4>
+              <p class="card-text">E bere me mish te bluar, vere te kuqe me arome te mire dhe leng domateje.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn5" id="btn1">Shto ne Shporte</button>
+                </div>
+                <small>Qmimi: 3.5€</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm" id="card">
+            <img src="img/cheese.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><rect width="100%" height="100%" fill="#55595c"/></img>
+            <div class="card-body" id="pasta10">
+              <h4>Four cheese pasta</h4>
+              <p class="card-text">Pasta with fresh sticky flavour 4 different kinds of cheese.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn6" id="btn1">Add To Cart</button>
+                </div>
+                <small>Price: 4€</small>
+              </div>
+            </div>
+
+             <div class="card-body" id="pasta11" style="display: none;">
+              <h4>Pasta me 4 Djathera</h4>
+              <p class="card-text">Pasta me shije te arome te fresket me 4 lloje te ndryshme te djatherave.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn6" id="btn1">Shto ne Shporte</button>
+                </div>
+                <small>Qmimi: 4€</small>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+ <div class="col-md-7 order-md-2 mb-4 container" id="contain">
+          <h4 class="d-flex justify-content-center align-items-center mb-4">
+            <span class="text-white mt-4">Your cart</span>
+          </h4>
+          <div class="row-md-3 d-flex align-items-center text-white">
+          <div class="names text-white">
+              <p>Name</p>
+          </div>
+          <div class=" names text-white">
+              <p>Quantity</p>
+          </div>
+          <div class=" names text-white">
+            <p>Price</p>
+          </div>
+          </div> 
+
+       <ul class="list-group container1" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Macaroni</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(0,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove1"><p>Remove</p></button>
+        </div>
+        </li>
+      </ul>
+
+      <ul class="list-group container2" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Spaghetti</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(1,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove2"><p>Remove</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container3" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Lasagna</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(2,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3.5&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove3"><p>Remove</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container4" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Home-Style Pasta</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(3,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">2.5&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove4"><p>Remove</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container5" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Spaghetti Bolognese</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(4,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3.5&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove5"><p>Remove</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container6" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Four Cheese Pasta</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(5,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">4&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove6"><p>Remove</p></button>
+
+        </div>
+        </li>
+      </ul>
+        <ul class="total" style="display: none;">
+          <li class="list-group-item d-flex justify-content-between remove6">
+              <span>Total (Euro)</span>
+              <strong id="value">0&euro;</strong>
+          </li><hr> 
+        </ul>
+
+        <button class="btn btn-primary btn-lg btn-block seethetotal" type="submit">See The Total</button>
+        <button class="btn btn-primary btn-lg btn-block proceed" type="submit" style="display: none;">Proceed</button>
+    </div>
+
+     <div class="col-md-7 order-md-2 mb-4 container" id="contain1" style="display: none;">
+          <h4 class="d-flex justify-content-center align-items-center mb-4">
+            <span class="text-white mt-4">Shporta Jote</span>
+          </h4>
+          <div class="row-md-3 d-flex align-items-center text-white">
+          <div class="names text-white">
+              <p>Emri</p>
+          </div>
+          <div class=" names text-white">
+              <p>Sasia</p>
+          </div>
+          <div class=" names text-white">
+            <p>Qmimi</p>
+          </div>
+          </div> 
+
+       <ul class="list-group container1" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Makarona</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(0,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove1"><p>Largo</p></button>
+        </div>
+        </li>
+      </ul>
+
+      <ul class="list-group container2" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Shpageta</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(1,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove2"><p>Largo</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container3" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Laznja</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(2,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3.5&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove3"><p>Largo</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container4" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Pasta Shtepie</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(3,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">2.5&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove4"><p>Largo</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container5" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Shpageti Bolonjeze</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(4,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">3.5&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove5"><p>Largo</p></button>
+        </div>
+        </li>
+      </ul>
+
+        <ul class="list-group container6" style="display: none;">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div class="col-md-4 list">
+            <h6 class="my-0 h6">Pasta me 4 Djathera</h6>
+          </div>
+           <div class="col-md-4 list">
+            <label for="quantity"></label>
+            <input type="number" class="form-control" id="quantity" placeholder="1" onchange="AddProductCalTotal(5,this.value)">
+          </div>
+          <div class="col-md-2 list">
+              <span class="text-muted text-center">4&euro;</span>
+          </div>
+        <div class="col-md- list" id="btn-div">
+          <button class="btn btn-warning remove float-left remove6"><p>Largo</p></button>
+
+        </div>
+        </li>
+      </ul>
+        <ul class="total" style="display: none;">
+          <li class="list-group-item d-flex justify-content-between remove6">
+              <span>Total (Euro)</span>
+              <strong id="value">0&euro;</strong>
+          </li><hr> 
+        </ul>
+
+        <button class="btn btn-primary btn-lg btn-block seethetotal" type="submit">Shiko Totalin</button>
+        <button class="btn btn-primary btn-lg btn-block proceed" type="submit" style="display: none;">Vazhdo</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+ <nav class="navbar navbar1 navbar-expand-md navbar-dark bg-dark" style="display: block;">
+        <a class="navbar-brand" id="copyright" href="#">©Express Food by: Granit Deliu</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto foot" style=" margin-left: 440px">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,299 @@
+body{
+  background-image: linear-gradient(95deg, #ff471a, orange);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+.bd-placeholder-img {
+   font-size: 1.125rem;
+   text-anchor: middle;
+   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.navbar a{
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+#numbers{
+  list-style-type: none;
+  display: none;
+  width: 150px;
+  background-color: white;
+  box-shadow: 10px 10px 10px black;
+  margin-top: 85px;
+  margin-left: 180px;
+  position: absolute;
+}
+
+#numbers li{
+  margin-left: -15px;
+}
+
+#numbers1{
+  list-style-type: none;
+  display: none;
+  width: 150px;
+  background-color: white;
+  box-shadow: 10px 10px 10px black;
+  margin-top: 85px;
+  margin-left: 180px;
+  position: absolute;
+}
+
+#numbers1 li{
+  margin-left: 30px;
+}
+
+#nav-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-bar a{
+  color: white;
+  font-size: 20px;
+  position: relative;
+  transition: background-color 200ms ease;
+}
+
+#nav-bar a::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.25s cubic-bezier(0.21, 0.18, 0, 0.88) 0.1s;
+}
+
+#nav-bar a:hover::after{
+  width: 100%;
+}
+
+.lang a{
+  position: relative;
+  transition: background-color 200ms ease;
+}
+
+.lang a::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  width: 0;
+  background-color: white;
+  transition: width 0.25s cubic-bezier(0.21, 0.18, 0, 0.88) 0.1s;
+}
+
+.lang a:hover::after{
+  width: 100%;
+}
+
+#dropdown{
+  box-shadow: 10px 10px 10px black;
+}
+
+#dropdown a:hover{
+  opacity: 1;
+  background-color: #444;
+  color: white;
+}
+
+#dropdown a{
+  color: black;
+  margin-left: 0;
+  font-size: 20px;
+}
+
+#numbers{
+  list-style-type: none;
+  display: none;
+  width: 150px;
+  background-color: white;
+  box-shadow: 10px 10px 10px black;
+  margin-top: 85px;
+  margin-left: 190px;
+  position: absolute;
+}
+
+#numbers li{
+  margin-left: 20px;
+}
+
+.lang a{
+  color: white;
+  font-size: 17px;
+  margin: 15px;
+}
+
+.lang a:hover{
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+.menu{
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.row{
+  margin-top: 30px;
+}
+
+#food1:hover{
+  text-decoration: none;
+}
+
+.image:hover{
+  opacity: 0.7;
+}
+
+ul{
+  list-style: square;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 0;
+  text-align: left; 
+}
+
+ul a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  margin-top: 4px;
+}
+
+#list li:hover{
+  opacity: 0.7;
+  color: white;
+}
+
+ul a:hover{
+  text-decoration: none;
+}
+
+.no-gutters{
+  height: 330px;
+}
+
+.mb-2{
+  display: flex; 
+  justify-content: center;
+  margin-right: 0;
+}
+
+#show{
+  display: none;
+}
+
+h2{
+  color: white;
+  text-align: center;
+}
+
+.short{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  img{
+    width: 300px;
+    height: 330px;
+  }
+
+  #food{
+    font-size: 45px;
+  }
+  .long{
+    display: none;
+  }
+
+  .short{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px){
+  img{
+    height: 250px;
+    width: 250px;
+  }
+
+  .no-gutters{
+    height: 
+      250px;
+  }
+
+  ul{
+    font-size: 10px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  #food{
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px){
+  img{
+    display: none;
+  }
+
+  #copyright{
+    font-size: 15px;
+  }
+}
+
+.navbar1{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.foot a{
+  position: relative;
+  transition: background-color 200ms ease;
+}
+
+.foot a::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: white;
+  transition: width 0.25s cubic-bezier(0.21, 0.18, 0, 0.88) 0.1s;
+}
+
+.foot a:hover::after{
+  width: 100%;
+}
